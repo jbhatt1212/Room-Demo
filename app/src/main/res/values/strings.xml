@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Room Demo</string>
+    <string name="add_word">add value</string>
+    <string name="save">Save</string>
+    <string name="empty_not_saved">empty not save\n\n</string>
+    <string name="note">note</string>
+    <string name="date">date</string>
+    <string name="enter_note_title">Enter Note Title</string>
+</resources>
