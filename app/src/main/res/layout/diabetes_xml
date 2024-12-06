@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DiabetesPredictionActivity">
+<androidx.appcompat.widget.Toolbar
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    app:layout_constraintTop_toTopOf="parent"
+    android:background="@color/colorPrimaryDark"
+    android:layout_height="wrap_content">
+
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:text="@string/diabetes_prediction"
+      />
+</androidx.appcompat.widget.Toolbar>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayoutName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="29dp"
+        android:layout_marginTop="6dp"
+        android:hint="number of preganancies"
+        app:layout_constraintTop_toBottomOf="@id/toolbar">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayoutGlucose"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="29dp"
+        android:layout_marginTop="6dp"
+        android:hint="glucose level"
+        app:layout_constraintTop_toBottomOf="@id/textInputLayoutName">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etGlucose"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayoutBlood"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="29dp"
+        android:layout_marginTop="6dp"
+        android:hint="blood presure value"
+        app:layout_constraintTop_toBottomOf="@id/textInputLayoutGlucose">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etBlood"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayoutSkin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="29dp"
+        android:layout_marginTop="6dp"
+        android:hint="skin thickness value"
+        app:layout_constraintTop_toBottomOf="@id/textInputLayoutBlood">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etSkin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayoutInsulin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="29dp"
+        android:layout_marginTop="6dp"
+        android:hint="insulin level"
+        app:layout_constraintTop_toBottomOf="@id/textInputLayoutSkin">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etInsulin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayoutBMI"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="29dp"
+        android:layout_marginTop="6dp"
+        android:hint="BMI level"
+        app:layout_constraintTop_toBottomOf="@id/textInputLayoutInsulin">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etBMI"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayoutPedigree"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="29dp"
+        android:layout_marginTop="6dp"
+        android:hint="diabetes pedigree function"
+        app:layout_constraintTop_toBottomOf="@id/textInputLayoutBMI">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etPedigree"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayoutAge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="29dp"
+        android:layout_marginTop="6dp"
+        android:hint="age of person"
+        app:layout_constraintTop_toBottomOf="@id/textInputLayoutPedigree">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etAge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <Button
+        app:layout_constraintTop_toBottomOf="@id/textInputLayoutAge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="10dp"
+        android:text="prediction"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
